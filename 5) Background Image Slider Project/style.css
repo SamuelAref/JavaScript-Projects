@@ -1,0 +1,108 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sliderContainer{
+
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    background-image: radial-gradient(white, black);
+}
+
+#imageContainer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    height: 80%;
+    background: url("./images/background/image1.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: all 0.5s linear;
+}
+
+.location{
+
+    /* border: white 1px solid; */
+    width: auto;
+    height: 3%;
+    margin-bottom: 10px;
+    background-color: rgba(17, 17, 17, 0.753);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle{
+
+    /* border: 1px gray solid; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(80, 79, 79);
+    margin: 3px;
+}
+
+.circle:hover{
+
+    cursor: pointer;
+}
+
+#leftArrow, #rightArrow{
+
+    /* border: 1px solid; */
+    width: 3%;
+    height: 100%;
+
+}
+
+#leftArrow{
+
+    background: url('./images/arrow-left-normal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.5s linear;
+}
+
+#leftArrow:hover{
+
+    background: url('./images/arrow-left-hover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 0.753);
+
+}
+
+#rightArrow{
+
+    background: url('./images/arrow-right-normal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.5s linear;
+}
+
+#rightArrow:hover{
+
+    background: url('./images/arrow-right-hover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 0.753);
+
+}

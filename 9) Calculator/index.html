@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="calculatorContainer">
+
+        <div id="choicesContainer" class="choicesContainer">
+
+            <div class="choiceCalculate">
+
+                <h3>Calculate</h3>
+
+                <div class="calculateChoices">
+
+                    <button class="choiceButtons" id="standard">Standard</button>
+                    <button class="choiceButtons" id="scientific">Scientific</button>
+                    <!-- <button class="choiceButtons" id="programmer">Programmer</button>
+                    <button class="choiceButtons" id="date">Date</button> -->
+
+                </div>
+
+            </div>
+
+            <div class="choiceConvert">
+
+
+                <h3>Convert</h3>
+
+                <div class="convertChoices">
+
+                    <button class="choiceButtons" id="currency">Currency</button>
+                    <button class="choiceButtons" id="volume">Volume</button>
+                    <button class="choiceButtons" id="length">Length</button>
+                    <button class="choiceButtons" id="weightMass">Weight and Mass</button>
+                    <button class="choiceButtons" id="temperature">Temperature</button>
+                    <button class="choiceButtons" id="energy">Energy</button>
+                    <button class="choiceButtons" id="area">Area</button>
+                    <button class="choiceButtons" id="speed">Speed</button>
+                    <button class="choiceButtons" id="time">Time</button>
+                    <button class="choiceButtons" id="power">Power</button>
+                    <button class="choiceButtons" id="data">Data</button>
+                    <button class="choiceButtons" id="pressure">Pressure</button>
+                    <button class="choiceButtons" id="angle">Angle</button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="calculate">
+
+            <div class="inputContainer">
+
+                <input placeholder="0" id = "inputting" type="text">
+            </div>
+
+            <div id="chosenContainer" class="chosenContainer">
+
+                <div id="standardContainer" class="standardContainer">
+
+                    <button class="standardButtons" id="percent">%</button>
+                    <button class="standardButtons" id="CE">CE</button>
+                    <button class="standardButtons" id="C">C</button>
+                    <button class="standardButtons" id="del">del</button>
+                    <button class="standardButtons" id="divide">÷</button>
+                    <button class="standardButtons" id="squareRoot">√</button>
+                    <button class="standardButtons" id="seven">7</button>
+                    <button class="standardButtons" id="eight">8</button>
+                    <button class="standardButtons" id="nine">9</button>
+                    <button class="standardButtons" id="multiply">x</button>
+                    <button class="standardButtons" id="xSquared">x²</button>
+                    <button class="standardButtons" id="four">4</button>
+                    <button class="standardButtons" id="five">5</button>
+                    <button class="standardButtons" id="six">6</button>
+                    <button class="standardButtons" id="minus">-</button>
+                    <button class="standardButtons" id="xCubed">x³</button>
+                    <button class="standardButtons" id="one">1</button>
+                    <button class="standardButtons" id="two">2</button>
+                    <button class="standardButtons" id="three">3</button>
+                    <button class="standardButtons" id="add">+</button>
+                    <button class="standardButtons" id="oneOverX">1/x</button>
+                    <button class="standardButtons" id="plusMinus">±</button>
+                    <button class="standardButtons" id="zero">0</button>
+                    <button class="standardButtons" id="decimal">.</button>
+                    <button class="standardButtons" id="equals">=</button>
+
+                </div>
+
+                <div id="scientificContainer" class="scientificContainer">
+
+                    <button class="scientificButtons" id="sin">sin</button>
+                    <button class="scientificButtons" id="cos">cos</button>
+                    <button class="scientificButtons" id="tan">tan</button>
+                    <button class="scientificButtons" id="C">C</button>
+                    <button class="scientificButtons" id="del">DEL</button>
+                    <button class="scientificButtons" id="divide">÷</button>
+                    <button class="scientificButtons" id="sinInv">sin-1</button>
+                    <button class="scientificButtons" id="cosInv">cos-1</button>
+                    <button class="scientificButtons" id="tanInv">tan-1</button>
+                    <button class="scientificButtons" id="seven">7</button>
+                    <button class="scientificButtons" id="eight">8</button>
+                    <button class="scientificButtons" id="nine">9</button>
+                    <button class="scientificButtons" id="multiply">X</button>
+                    <button class="scientificButtons" id="log">log</button>
+                    <button class="scientificButtons" id="pi">π</button>
+                    <button class="scientificButtons" id="mod">Mod</button>
+                    <button class="scientificButtons" id="four">4</button>
+                    <button class="scientificButtons" id="five">5</button>
+                    <button class="scientificButtons" id="six">6</button>
+                    <button class="scientificButtons" id="minus">-</button>
+                    <button class="scientificButtons" id="ln">ln</button>
+                    <button class="scientificButtons" id="n!">n!</button>
+                    <button class="scientificButtons" id="squareRoot">√</button>
+                    <button class="scientificButtons" id="one">1</button>
+                    <button class="scientificButtons" id="two">2</button>
+                    <button class="scientificButtons" id="three">3</button>
+                    <button class="scientificButtons" id="add">+</button>
+                    <button class="scientificButtons" id="xSquared">x²</button>
+                    <button class="scientificButtons" id="plusMinus">±</button>
+                    <button class="scientificButtons" id="zero">0</button>
+                    <button class="scientificButtons" id="decimal">.</button>
+                    <button class="scientificButtons" id="equals">=</button>
+
+                </div>
+
+                <div class="currencyContainer" id="currencyContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="$">Currency</label>
+                        <select name="currency" id="$in">
+
+                            <option value="USD">USD</option>
+                            <option value="ETB">ETB</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+
+                        </select>
+                        <input type="number" id="initialCurrency">
+                        <button id="currencyButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="currency" id="$out">
+
+                            <option value="USD">USD</option>
+                            <option value="ETB">ETB</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+
+                        </select>
+
+                        <label id = "finalCurrency" for="">Curency : </label>
+
+
+                    </div>
+
+                </div>
+
+                <div class="volumeContainer" id="volumeContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="V">Volume</label>
+                        <select name="volume" id="Vin">
+
+                            <option value="m³">m³</option>
+                            <option value="cm³">cm³</option>
+                            <option value="L">L</option>
+                            <option value="ml">ml</option>
+
+                        </select>
+                        <input type="number" id="initialVolume">
+                        <button id="volumeButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="volume" id="Vout">
+
+                            <option value="m³">m³</option>
+                            <option value="cm³">cm³</option>
+                            <option value="L">L</option>
+                            <option value="ml">ml</option>
+
+                        </select>
+
+                        <label id = "finalVolume" for="">Volume : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="lengthContainer" id="lengthContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="L">Length</label>
+                        <select name="length" id="Lin">
+
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                            <option value="inch">inch</option>
+                            <option value="miles">miles</option>
+
+
+                        </select>
+                        <input type="number" id="initialLength">
+                        <button id="lengthButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="length" id="Lout">
+
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                            <option value="inch">inch</option>
+                            <option value="miles">miles</option>
+
+                        </select>
+
+                        <label id = "finalLength" for="">Length : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="weightandMassContainer" id="weightandMassContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="WM">Weight/Mass</label>
+                        <select name="weightandMass" id="WMin">
+
+                            <option value="kg">kg</option>
+                            <option value="gm">gm</option>
+                            <option value="oz.">oz.</option>
+                            <option value="lbs">lbs</option>
+
+                        </select>
+                        <input type="number" id="initialweightandMass">
+                        <button id="weightandMassButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="weightandMass" id="WMout">
+
+                            <option value="kg">kg</option>
+                            <option value="gm">gm</option>
+                            <option value="oz.">oz.</option>
+                            <option value="lbs">lbs</option>
+
+                        </select>
+
+                        <label id = "finalweightandMass" for="">Weight/Mass : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="temperatureContainer" id="temperatureContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Temp">Temperature</label>
+                        <select name="temperature" id="Tempin">
+
+                            <option value="c°">c°</option>
+                            <option value="f°">f°</option>
+                            <option value="k°">k°</option>
+
+                        </select>
+                        <input type="number" id="initialTemperature">
+                        <button id="temperatureButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="temperature" id="Tempout">
+
+                            <option value="c°">c°</option>
+                            <option value="f°">f°</option>
+                            <option value="k°">k°</option>
+
+                        </select>
+
+                        <label id = "finalTemperature" for="">Temperature : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="energyContainer" id="energyContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Energy">Energy</label>
+                        <select name="energy" id="Ein">
+
+                            <option value="J">J</option>
+                            <option value="KJ">KJ</option>
+                            <option value="EV">ev</option>
+
+                        </select>
+                        <input type="number" id="initialEnergy">
+                        <button id="energyButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="energy" id="Eout">
+
+                            <option value="J">J</option>
+                            <option value="KJ">KJ</option>
+                            <option value="EV">ev</option>
+
+                        </select>
+
+                        <label id = "finalEnergy" for="">Energy : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="areaContainer" id="areaContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Area">Area</label>
+                        <select name="area" id="Areain">
+
+                            <option value="m²">m²</option>
+                            <option value="cm²">cm²</option>
+                            <option value="Km²">Km²</option>
+                            <option value="inch²">inch²</option>
+                            <option value="miles²">miles²</option>
+
+
+                        </select>
+                        <input type="number" id="initialArea">
+                        <button id="areaButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="area" id="Areaout">
+
+                            <option value="m²">m²</option>
+                            <option value="cm²">cm²</option>
+                            <option value="Km²">Km²</option>
+                            <option value="inch²">inch²</option>
+                            <option value="miles²">miles²</option>
+
+                        </select>
+
+                        <label id = "finalArea" for="">Area : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="speedContainer" id="speedContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Speed">Speed</label>
+                        <select name="speed" id="Speedin">
+
+                            <option value="m/s">m/s</option>
+                            <option value="km/hr">km/hr</option>
+                            <option value="cm/s">cm/s</option>
+                            <option value="feet/s">feet/s</option>
+
+                        </select>
+                        <input type="number" id="initialSpeed">
+                        <button id="speedButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="speed" id="Speedout">
+
+                            <option value="m/s">m/s</option>
+                            <option value="km/hr">km/hr</option>
+                            <option value="cm/s">cm/s</option>
+                            <option value="feet/s">feet/s</option>
+
+                        </select>
+
+                        <label id ="finalSpeed" for="">Speed : </label>
+
+                    </div>
+                </div>
+
+                <div class="timeContainer" id="timeContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Time">Time</label>
+                        <select name="time" id="Timein">
+
+                            <option value="µs">µs</option>
+                            <option value="ms">ms</option>
+                            <option value="s">s</option>
+                            <option value="min">min</option>
+                            <option value="hrs">hr</option>
+                            <option value="days">days</option>
+                            <option value="weeks">weeks</option>
+                            <option value="years">years</option>
+
+                        </select>
+                        <input type="number" id="initialTime">
+                        <button id="timeButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="Time" id="Timeout">
+
+                            <option value="µs">µs</option>
+                            <option value="ms">ms</option>
+                            <option value="s">s</option>
+                            <option value="min">min</option>
+                            <option value="hrs">hr</option>
+                            <option value="days">days</option>
+                            <option value="weeks">weeks</option>
+                            <option value="years">years</option>
+
+                        </select>
+
+                        <label id = "finalTime" for="">Time : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="powerContainer" id="powerContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Power">Power</label>
+                        <select name="power" id="Powerin">
+
+                            <option value="watts">watts</option>
+                            <option value="Kilowatts">Kilowatts</option>
+                            <option value="Horsepower">Horsepower</option>
+
+                        </select>
+                        <input type="number" id="initialPower">
+                        <button id="powerButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="power" id="Powerout">
+
+                            <option value="watts">watts</option>
+                            <option value="Kilowatts">Kilowatts</option>
+                            <option value="Horsepower">Horsepower</option>
+
+                        </select>
+
+                        <label id = "finalPower" for="">Power : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="dataContainer" id="dataContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Data">Data</label>
+                        <select name="data" id="Datain">
+
+                            <option value="mb">mb</option>
+                            <option value="kb">kb</option>
+                            <option value="tb">tb</option>
+                            <option value="bytes">bytes</option>
+
+                        </select>
+                        <input type="number" id="initialData">
+                        <button id="dataButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="data" id="Dataout">
+
+                            <option value="mb">mb</option>
+                            <option value="kb">kb</option>
+                            <option value="tb">tb</option>
+                            <option value="bytes">bytes</option>
+
+                        </select>
+
+                        <label id = "finalData" for=""> Data : </label>
+
+
+                    </div>
+                </div>
+
+                <div class="pressureContainer" id="pressureContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Pressure">Pressure</label>
+                        <select name="pressure" id="Pressurein">
+
+                            <option value="pascals">pascals</option>
+                            <option value="kilopascals">kilopascals</option>
+                            <option value="bars">bars</option>
+
+                        </select>
+                        <input type="number" id="initialPressure">
+                        <button id="pressureButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="pressure" id="Pressureout">
+
+                            <option value="pascals">pascals</option>
+                            <option value="kilopascals">kilopascals</option>
+                            <option value="bars">bars</option>
+
+                        </select>
+
+                        <label id = "finalPressure" for="">Pressure : </label>
+
+                    </div>
+                </div>
+
+                <div class="angleContainer" id="angleContainer">
+
+                    <div class="inputConvert">
+
+                        <label for="Angle">Angle</label>
+                        <select name="angle" id="Anglein">
+
+                            <option value="deg°">deg°</option>
+                            <option value="rad">Rad</option>
+                            <option value="grad">Grad</option>
+
+                        </select>
+                        <input type="number" id="initialAngle">
+                        <button id="angleButtonConvert">Convert</button>
+
+                    </div>
+
+                    <div class="outputConvert">
+
+                        <select name="angle" id="Angleout">
+
+                            <option value="deg°">deg°</option>
+                            <option value="rad">Rad</option>
+                            <option value="grad">Grad</option>
+
+                        </select>
+
+                        <label id = "finalAngle" for="">Angle : </label>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="history">
+
+            <h3 style="text-align: center;">History</h3>
+
+            <ul id="historyList">
+
+            </ul>
+
+
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

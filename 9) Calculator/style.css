@@ -1,0 +1,324 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.calculatorContainer{
+
+    border: 1px solid;
+    width: 80%;
+    height: 580px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+
+
+
+
+.choicesContainer{
+
+    /* border: 1px solid; */
+    width: 22%;
+    height: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.choicesContainer button{
+
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 1.2em;
+    transition: all 0.3s linear;
+}
+
+#choicesContainer button:hover{
+
+    border: 1px solid white;
+    cursor: pointer;
+
+
+}
+
+.choiceCalculate{
+
+    /* border: 1px solid; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.calculateChoices{
+
+    /* border: 1px solid; */
+    width: 99%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.choiceConvert{
+
+    /* border: 1px solid; */
+    width: 98%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.convertChoices{
+
+    /* border: 1px blue solid; */
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calculate{
+
+    border: 1px solid;
+    width: 52%;
+    height: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.inputContainer{
+
+    border: 1px solid;
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.inputContainer input{
+
+    width: 98%;
+    height: 90%;
+    text-align: right;
+    font-size: 2em;
+}
+
+.chosenContainer{
+
+    /* border: 1px solid; */
+    width: 95%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.standardContainer{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 95%;
+    height: 95%;
+}
+
+.standardButtons{
+
+    border: 1px solid white;
+    width: 19%;
+    height: 19%;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+
+.standardButtons:hover, .scientificButtons:hover{
+
+    background-color: rgba(41, 40, 40, 0.911);
+    cursor: pointer;
+}
+
+
+
+.scientificContainer{
+
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 95%;
+    height: 95%;
+}
+
+.scientificButtons{
+
+    border: 1px solid;
+    width: 14%;
+    height: 15%;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* converters */
+.currencyContainer, 
+.volumeContainer, 
+.lengthContainer, 
+.weightandMassContainer,
+.temperatureContainer,
+.energyContainer,
+.areaContainer,
+.speedContainer,
+.timeContainer,
+.powerContainer,
+.dataContainer,
+.pressureContainer,
+.angleContainer{
+
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+    width: 95%;
+    height: 70%;
+    font-size: 1.2em;
+}
+
+.inputConvert{
+
+    border-bottom: 1px solid white;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.inputConvert label{
+
+    margin: 0 0 8px 0;
+}
+.outputConvert label{
+
+    margin: 0 0 5px 10px;
+}
+
+.inputConvert select, .outputConvert select{
+
+    background-color: black;
+    color: white;
+    width: 70px;
+}
+
+.inputConvert button{
+
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    height: 19px;
+    transition: all 0.1s linear;
+
+}
+
+.inputConvert button:hover{
+
+    background-color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+
+.outputConvert{
+
+    border-top: 1px solid white;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.history{
+
+    border: 1px solid;
+    width: 22%;
+    height: 98%;
+}
+
+#historyList{
+
+    color: white;
+    font-size: 1.2em;
+}

@@ -1,0 +1,68 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gameContainer{
+
+    border: 1px solid;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gameBoxContainer{
+
+    /* border: 1px solid; */
+    width: 98%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.boxes{
+
+    border: 1px solid;
+    width: 50px;
+    height: 10px;
+    background-color: lightblue;
+
+}
+
+.character{
+
+    border: 1px solid;
+    width: 95%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ball{
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+    position: relative;
+}
+
+.board{
+
+    width: 47px;
+    height: 5px;
+    border: 1px solid;
+    position: relative;
+
+}

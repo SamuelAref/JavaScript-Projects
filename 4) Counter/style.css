@@ -1,0 +1,177 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    flex-direction: column;
+}
+
+.counter-container{
+
+    /* border: 1px solid; */
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 20px;
+
+}
+
+.counter{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background-color: rgb(49, 48, 48);
+    border-radius: 20px;
+}
+
+.counter label{
+
+    font-family:monospace;
+    font-size: 5em;
+    padding: 10px;
+    color: red;
+}
+
+.buttons{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.buttons button{
+
+    transform: scale(1.2);
+    font-size: 1em;
+    width: auto;
+}
+
+#start{
+
+    background-color: rgb(80, 247, 80);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 50px;
+    
+}
+
+#start:hover{
+
+    cursor: pointer;
+    background-color: rgb(5, 201, 5);
+
+}
+
+#pause{
+
+    background-color: rgb(228, 245, 80);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    
+}
+
+#pause:hover{
+
+    cursor: pointer;
+    background-color: rgb(182, 201, 10);
+
+}
+
+#reset{
+
+    background-color: rgb(96, 250, 212);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 55px;
+    
+}
+
+#reset:hover{
+
+    cursor: pointer;
+    background-color: rgb(3, 214, 161);
+
+
+}
+
+#time{
+
+    background-color: rgb(141, 129, 255);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    /* width: 55px; */
+    
+}
+
+#time:hover{
+
+    cursor: pointer;
+    background-color: rgb(91, 73, 252);
+    
+
+}
+
+
+.lap-container{
+
+    width: 50%;
+    /* border: 1px solid; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: khaki;
+
+}
+
+#lapList{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 95%;
+    /* border: 1px solid; */
+    color: navy;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+#currentLap{
+
+    color: rgb(245, 239, 186);
+    background-color: rgb(37, 37, 196);
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    transform: scale(1.1);
+}
+
+#currentLap:hover{
+
+    cursor: pointer;
+    color: khaki;
+    background-color: navy;
+
+}
+
+

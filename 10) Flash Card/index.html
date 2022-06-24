@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Flash Card</title>
+</head>
+<body>
+
+    <div class="wholeContainer">
+
+        <div class="addFlash">
+
+            <button id="addFlash">Add Flash Card</button>
+        </div>
+
+
+        <div id="flashQuestionAnswer" class="flashQuestionAnswer">
+
+            <div class="flashFormQuestion">
+
+                <label  for="flashQuestion">Flash Question</label>
+                <textarea name="flashQuestion" id="flashQuestion" cols="50" rows="5" placeholder="write your question here"></textarea>
+    
+            </div>
+    
+            <div class="flashFormAnswer">
+    
+                <label for="flashAnswer">Flash Answer</label>
+                <textarea name="flashAnswer" id="flashAnswer" cols="50" rows="5" placeholder="write your answer here"></textarea>
+    
+            </div>
+
+            <button id="submitFlash">Submit Flash</button>
+
+        </div>
+
+      
+
+
+
+        <div id="flashContainer" class="flashContainer">
+
+            <!-- <div class="card" id="card">
+
+                <p >What is the place over there?</p>
+                <p >here</p>
+
+                <button id="showHide">Show/Hide Answer</button>
+
+            </div> -->
+
+        </div>
+
+    </div>
+    
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
